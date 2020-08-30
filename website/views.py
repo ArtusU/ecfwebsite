@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.views.generic import ListView, DetailView
+from website.models import Post
 
 
 
@@ -39,3 +40,18 @@ def blog(request):
 
 def blogDetails(request):
     return render(request, 'blog-details.html', {})
+
+
+#class Blog(ListView):
+    model = Post
+    template_name = 'blog.html'
+
+
+class NewBlogView(ListView):
+    model = Post
+    template_name = 'blog2.html'
+
+
+class NewBlogDetailView(DetailView):
+    model = Post
+    template_name = 'newblog-details.html'
