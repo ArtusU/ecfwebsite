@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Ask Question</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  
+ <center>
+  
+
+    <h5>Hi {{your_name}}</h5>
+
+    <h5>Our Nutritionist {{your_nutritionist}} will contact you tomorrow between: {{your_schedule}}<h5/>
+    <h6>Your Phone {{your_phone}}<h6/>
+    <h6>Your Email {{your_email}}<h6/>
+    <br/><br/>
+    <h6>Your Question</h6>
+    <h6>{{your_message}}</h6>
+    <br/><br/>
+    <h6>Speak to you soon</h6>
+
+
+
+
+
+<br/><br/><br><br/>
+
+{% endblock %}
+
