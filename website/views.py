@@ -54,7 +54,7 @@ def question(request):
         your_message = request.POST['your-message']
 
 
-        message = "Hi" + your_name + ". " + " Our Nutritionist " + your_nutritionist + " will contact you tomorrow between: " + your_schedule + " at " +  your_phone + your_message + " Speak to you soon. "
+        message = "Hi " + your_name + ". " + " Our Nutritionist " + your_nutritionist + " will contact you tomorrow between: " + your_schedule + " at " +  your_phone + " Your message: " + your_message + " Speak to you soon. "
 
 
         send_mail(
