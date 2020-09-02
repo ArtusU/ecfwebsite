@@ -127,4 +127,4 @@ EMAIL_HOST_PASSWORD = '8b643fb6f01897'
 EMAIL_USE_TLS = True
 # EMAIL_USE_SSL = False
 
-django-heroku.settings(locals())
+django_heroku.settings(locals())
